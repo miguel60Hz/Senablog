@@ -24,4 +24,14 @@ class HomeController extends Controller
 
         return view('home', compact('areas', 'teachers', 'courses', 'apprentices'));
     }
+
+    public function mision_vision()
+    {
+        return view('mision_vision');
+    }
+
+    public function contact()
+    {
+        return view('contact');
+    }
 }

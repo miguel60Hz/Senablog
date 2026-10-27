@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white; border-bottom: 4px solid #28a745;">
     <div class="container">
         <!-- Logo -->
-        <a class="navbar-brand" href="{{ route('home') }}">
+        <a class="navbar-brand" href="{{ route('home.index') }}">
             <span class="logo">AdminSena</span>
         </a>
         <!-- Botón de menú -->
@@ -13,30 +13,21 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}" href="{{ route('home') }}">Home</a>
+                    <a class="nav-link" href="{{ route('home.index') }}">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('areas.*') ? 'active' : '' }}" href="{{ route('areas.index') }}">Áreas</a>
+                    <a class="nav-link" href="{{ route('home.mision_vision') }}">Mision y vision</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('training-centers.*') ? 'active' : '' }}" href="{{ route('training-centers.index') }}">Centros de formación</a>
+                    <a class="nav-link" href="{{ route('posts') }}">Publicaciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('teachers.*') ? 'active' : '' }}" href="{{ route('teachers.index') }}">Docentes</a>
+                    <a class="nav-link" href="{{ route('categories.index') }}">Categorias</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('courses.*') ? 'active' : '' }}" href="{{ route('courses.index') }}">Cursos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('computers.*') ? 'active' : '' }}" href="{{ route('computers.index') }}">Equipos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link {{ request()->routeIs('apprentices.*') ? 'active' : '' }}" href="{{ route('apprentices.index') }}">Aprendices</a>
+                    <a class="nav-link" href="{{ route('home.contact') }}">Contactanos</a>
                 </li>
             </ul>
-            <span class="navbar-text api-url">
-                API: {{ env('URL_SERVER_API') }}
-            </span>
         </div>
     </div>
 </nav>

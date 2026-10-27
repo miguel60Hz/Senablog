@@ -1,10 +1,10 @@
 @extends('layouts.app')
 
-@section('title', 'Equipos de cómputo')
+@section('title', 'Equipos')
 
 @section('content')
     <div class="container mt-4">
-        <h1 class="mb-4">Lista de Equipos de Cómputo</h1>
+        <h1 class="mb-4">Lista de Equipos</h1>
 
         <div class="table-responsive">
             <table class="table table-bordered table-striped">
